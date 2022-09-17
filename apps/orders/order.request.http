@@ -1,0 +1,10 @@
+## Create Order
+
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+  "name": "T-Shirt",
+  "price": 39.99,
+  "phoneNumber": "+15083418372"
+}
