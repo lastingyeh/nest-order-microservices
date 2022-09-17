@@ -11,6 +11,7 @@ services:
       - mongodb-primary
       - mongodb-secondary
       - mongodb-arbiter
+      - rabbitmq
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules
@@ -28,11 +29,10 @@ services:
       - mongodb-primary
       - mongodb-secondary
       - mongodb-arbiter
+      - rabbitmq
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules
-    ports:
-      - '3000:3000'
   
   rabbitmq:
     image: rabbitmq
