@@ -1,7 +1,8 @@
-## Create Order
+### Create Order
 
 POST http://localhost:3000/orders
 Content-Type: application/json
+Cookie: Authentication=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzJmYzVlNjk5Y2I1YWRkNmYzNDFmYTUiLCJpYXQiOjE2NjQxMTUzMTIsImV4cCI6MTY2NDExODkxMn0.qEx0xGSNaE5rUnwVu_nI0LkICZUvgZQ1E8PMcUToapE
 
 {
   "name": "T-Shirt",

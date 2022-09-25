@@ -40,7 +40,7 @@ $ nest g library common
 
 ### install supported libs
 ```
-  $ npm i mongoose @nestjs/mongoose @nestjs/config joi class-transformer class-validator @nestjs/microservices amqp-connection-manager amqplib
+  $ npm i mongoose @nestjs/mongoose @nestjs/config joi class-transformer class-validator @nestjs/microservices amqp-connection-manager amqplib @nestjs/jwt @nestjs/passport bcrypt cookie-parser passport passport-jwt passport-local
 ```
 
 ### set database at docker

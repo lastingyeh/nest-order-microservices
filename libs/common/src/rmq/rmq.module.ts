@@ -8,7 +8,7 @@ interface RmqModuleOptions {
 }
 
 @Module({
-  imports: [RmqService],
+  providers: [RmqService],
   exports: [RmqService],
 })
 export class RmqModule {
@@ -26,11 +26,11 @@ export class RmqModule {
                 queue: configService.get<string>(`RABBIT_MQ_${name}_QUEUE`),
               },
             }),
-            inject: [ConfigService]
+            inject: [ConfigService],
           },
         ]),
       ],
-      exports: [ClientsModule]
+      exports: [ClientsModule],
     };
   }
 }

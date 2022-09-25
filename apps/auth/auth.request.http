@@ -1,0 +1,20 @@
+### Create User
+
+POST http://localhost:3001/auth/users
+Content-Type: application/json
+
+{
+  "email": "user@test.com",
+  "password": "1234567"
+}
+
+### Login User
+
+POST http://localhost:3001/auth/login
+Content-Type: application/json
+
+{
+  "email": "user@test.com",
+  "password": "1234567"
+}
+

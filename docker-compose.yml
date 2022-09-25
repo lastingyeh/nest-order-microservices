@@ -33,6 +33,24 @@ services:
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules
+  auth:
+    build:
+      context: .
+      dockerfile: ./apps/auth/Dockerfile
+      target: development
+    command: npm run start:dev auth
+    ports:
+      - '3001:3001'
+    env_file:
+      - ./apps/auth/.env
+    depends_on:
+      - mongodb-primary
+      - mongodb-secondary
+      - mongodb-arbiter
+      - rabbitmq
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
   
   rabbitmq:
     image: rabbitmq
